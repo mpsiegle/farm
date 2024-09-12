@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+:root{
+    --green: #06A816;
+    --orange: #E75D02;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Habibi";
+    font-size: 1.25em;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+    width: auto;
+    height: 100px;
+    margin: 0 auto;
+    color: var(--white);
+    background-color: var(--green);
+}
+
+h1{ 
+    font-size: 1.75em;
+    font-family: "Irish Grover";
+    width: 50%;
+    text-shadow: 2px 2px 2px var(--black);
+}
+
+header p{
+    grid-row: 2;
+    font-size: .80em;
+    font-family: "Habibi";
+    font-style: italic;
+    padding-top: .55em;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    
+    padding: 0px;
+    margin: 0px;
+}
+
+nav a{
+    color: var(--white);
+    background-color: var(--orange);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    outline: var(--white) solid;
+    border-radius: 5px;
+
+}
+
+h2{
+    font-family: "Irish Grover";
+    padding-top: 1.2em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+h2 ~ p{
+    font-size: .8em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+    letter-spacing: 1.5px;
+    padding-left: 1.5em;
+}
+
+h3{
+    font-family: "Irish Grover";
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 1.5em;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+h3 ~ div{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+figure figcaption{
+    color: var(--white);
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    top: -155px;
+    left: 50px;
+    border: 1px;
+    padding: .5em;
+    max-width: 55%;
+    background-color: var(--black);
+    opacity: 80%;
+  }
+
+  footer{
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 1rem;
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+    color: var(--white);
+    background-color: var(--green);
+    text-align: center;
+    
+  }
+
+  #contact{
+    grid-column: 1;
+    padding: 2em;
+    font-family: "Irish Grover";
+    font-size: 1.5em;
+  }
+
+  #address{
+    grid-column: 2;
+    padding: 2em;
+    font-size: 1em;
+  }
+
+  #hours{
+    grid-column: 3;
+    padding: 2em;
+    font-size: 1.5em;
+    font-family: "Irish Grover";
+  }
+
+  #times{
+    grid-column: 4;
+    letter-spacing: .75px;
+  }
+
+  #copyright{
+    text-align: center;
+    color: var(--green);
+  }
+
+  #btn{
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    text-decoration: none;
+    font-weight: bold;
+    border: solid 1px var(--white);
+  }
+
+  nav a:hover{
+    background-color: var(--black);
+  }
+
+  #btn:hover{
+    background-color: var(--black);
+  }
+  
+
+ /* @media screen and (min-width: 550px) {
+    nav ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 836px) {
+    nav ul {
+      grid-template-columns: 1fr;
+      width: 200px;
+      position: absolute;
+    }
+    main {
+      margin-left: 200px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    #graffitiGirl {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}
