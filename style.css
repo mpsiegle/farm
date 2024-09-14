@@ -87,7 +87,7 @@ header{
 }
 
 h1{ 
-    font-size: 1.75em;
+    font-size: 2.5em;
     font-family: "Irish Grover";
     width: 50%;
     text-shadow: 2px 2px 2px var(--black);
@@ -105,7 +105,6 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    
     padding: 0px;
     margin: 0px;
 }
@@ -118,7 +117,7 @@ nav a{
     display: block;
     text-align: center;
     outline: var(--white) solid;
-    border-radius: 5px;
+    border-radius: 3px;
 
 }
 
@@ -127,7 +126,7 @@ h2{
     padding-top: 1.2em;
     padding-bottom: .5em;
     padding-left: 1em;
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-weight: bold;
 }
 
@@ -144,7 +143,7 @@ h2 ~ p{
 h3{
     font-family: "Irish Grover";
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.25em;
     padding-bottom: 1.5em;
 }
 
@@ -178,7 +177,6 @@ figure figcaption{
     padding: .5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-bottom: 1rem;
     width: auto;
     height: 150px;
@@ -222,7 +220,7 @@ figure figcaption{
   #btn{
     position: fixed;
     bottom: 20px; 
-    right: 30px; 
+    right: 2px; 
     background-color: var(--orange);
     color: var(--white);
     padding: 15px; 
@@ -231,6 +229,7 @@ figure figcaption{
     text-decoration: none;
     font-weight: bold;
     border: solid 1px var(--white);
+    z-index: 99;
   }
 
   nav a:hover{
@@ -242,39 +241,145 @@ figure figcaption{
   }
   
 
- /* @media screen and (min-width: 550px) {
-    nav ul {
+  @media screen and (min-width: 350px) {
+
+  header{
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 145px;
+      text-align: center;
+
+  }
+
+  h1{
+    padding-left: 150px;
+  }
+  nav ul{
+    display: flex;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+  }
+  h2{
+    padding-top: 90px;
+  }
+
+  h3 ~ div{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  footer{
+    display: block;
+    height: auto;
+  }
+
+ }
+  @media screen and (min-width: 836px) {
+    header{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      height: 110px
     }
-    main {
+
+    header p{
+      grid-column: 3;
+      grid-row: 1;
+
+    }
+    nav ul{
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }
-  }
+      padding: 15px;
+      position: relative;
+      top: 90px;
 
-  @media screen and (min-width: 836px) {
-    nav ul {
-      grid-template-columns: 1fr;
-      width: 200px;
-      position: absolute;
     }
-    main {
-      margin-left: 200px;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+
+    h3 ~ div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
   }
+    footer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 320px;
+    }
+
+    #address{
+      grid-column: 1;
+    }
+
+    #hours{
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    #times{
+      grid-column: 2;
+    }
+}
+  
 
   @media screen and (min-width: 1100px) {
-    #graffitiGirl {
+
+    header{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 140px;
+    }
+
+
+    header p{
+      grid-column: 1;
+      grid-row: 2;
+      
+    }
+
+    nav ul{
+      position: relative;
+      top: 20px;
+
+    }
+
+    h3 ~ div{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-    }
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 250px;
+  }
+
+  #address{
+    grid-column: 2;
+  }
+
+  #hours{
+    
+    grid-column: 3;
+  }
+
+  #times{
+    grid-column: 4;
+  }
+
   }
 
 
 @media screen and (min-width: 1200px) {
-  main {
-    max-width: 1200px;
+
+  header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 140px;
   }
+
+
+  h3 ~ div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 }
