@@ -95,10 +95,9 @@ h1{
 
 header p{
     grid-row: 2;
-    font-size: .80em;
+    font-size: 1.25;
     font-family: "Habibi";
     font-style: italic;
-    padding-top: .55em;
 }
 
 nav ul{
@@ -248,7 +247,6 @@ figure figcaption{
       grid-template-columns: 1fr;
       height: 145px;
       text-align: center;
-
   }
 
   h1{
@@ -257,8 +255,9 @@ figure figcaption{
   nav ul{
     display: flex;
     position: relative;
-    top: 20px;
+    top: 35px;
     justify-content: center;
+    
   }
   h2{
     padding-top: 90px;
@@ -285,7 +284,7 @@ figure figcaption{
     header p{
       grid-column: 3;
       grid-row: 1;
-
+      padding-top: 25px;
     }
     nav ul{
       display: grid;
@@ -326,19 +325,20 @@ figure figcaption{
     header{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      height: 140px;
+      height: 175px;
     }
+    
 
 
     header p{
       grid-column: 1;
       grid-row: 2;
-      
+      padding-right: 150px;
     }
 
     nav ul{
       position: relative;
-      top: 20px;
+      top: 45px;
 
     }
 
@@ -374,7 +374,12 @@ figure figcaption{
   header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 140px;
+    height: 185px;
+  }
+
+  h1{
+    padding-top: 25px;
+    padding-left: 200px;
   }
 
 
