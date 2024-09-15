@@ -89,13 +89,13 @@ header{
 h1{ 
     font-size: 2.5em;
     font-family: "Irish Grover";
-    width: 50%;
+    width: 100%;
     text-shadow: 2px 2px 2px var(--black);
 }
 
 header p{
     grid-row: 2;
-    font-size: 1.25;
+    font-size: 1.25em;
     font-family: "Habibi";
     font-style: italic;
 }
@@ -245,22 +245,21 @@ figure figcaption{
   header{
       display: grid;
       grid-template-columns: 1fr;
-      height: 145px;
+      height: 110px;
       text-align: center;
   }
 
-  h1{
-    padding-left: 150px;
-  }
   nav ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    margin: 0 auto;
     position: relative;
-    top: 35px;
-    justify-content: center;
-    
+    top: 30px;
   }
+
   h2{
-    padding-top: 90px;
+    padding-top: 155px;
   }
 
   h3 ~ div{
@@ -277,22 +276,28 @@ figure figcaption{
   @media screen and (min-width: 836px) {
     header{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      height: 110px
+      grid-template-columns: 1fr 1fr;
+      height: 110px;
+      text-align: left;
     }
 
+    h1{
+      width: 200%;
+    }
+  
     header p{
       grid-column: 3;
       grid-row: 1;
       padding-top: 25px;
     }
+
     nav ul{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding: 15px;
-      position: relative;
-      top: 90px;
-
+      column-gap: 200px;
+      top: 125px;
+      width: 180%;
+      right: 75px;
     }
 
     h3 ~ div{
@@ -325,7 +330,16 @@ figure figcaption{
     header{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      height: 175px;
+      height: 150px;
+      text-align: left;
+    }
+
+    h1{
+      width: 100%;
+    }
+
+    h2{
+      padding-top: 50px;
     }
     
 
@@ -333,13 +347,14 @@ figure figcaption{
     header p{
       grid-column: 1;
       grid-row: 2;
-      padding-right: 150px;
     }
 
     nav ul{
       position: relative;
       top: 45px;
-
+      right: 25px;
+      width: 100%;
+      column-gap: 50px;
     }
 
     h3 ~ div{
@@ -350,11 +365,15 @@ figure figcaption{
   footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 250px;
+    height: 260px;
+    width: 100%;
   }
 
   #address{
     grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
   }
 
   #hours{
@@ -364,6 +383,9 @@ figure figcaption{
 
   #times{
     grid-column: 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-width: 35ch;
   }
 
   }
@@ -373,13 +395,12 @@ figure figcaption{
 
   header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 185px;
+    height: 150px;
   }
 
   h1{
-    padding-top: 25px;
-    padding-left: 200px;
+    padding-right: 300px;
+    width: 200%;
   }
 
 
@@ -387,4 +408,11 @@ figure figcaption{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+#address{
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr;
 }
+}
+
